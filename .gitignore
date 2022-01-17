@@ -1,0 +1,9 @@
+# Nodejs
+node_modules
+package-lock.json
+
+# Terraform
+.terraform
+*.hcl
+*.tfstate
+*.tfstate.backup

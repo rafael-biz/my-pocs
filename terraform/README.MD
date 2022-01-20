@@ -18,7 +18,7 @@ In your terminal, use the Azure CLI tool to setup your account permissions local
 az login
 ```
 
-# Init terraform
+# Terraform Init
 
 Run the `terraform init` to initialize the Terraform configuration of the demo.
 
@@ -26,7 +26,7 @@ Run the `terraform init` to initialize the Terraform configuration of the demo.
 terraform init
 ```
 
-# Run Terraform apply
+# Terraform Apply
 
 Run the `terraform apply` command to apply the configuration of the demo.
 

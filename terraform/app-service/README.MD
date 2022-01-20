@@ -1,26 +1,8 @@
 # Azure App Service Demo
 
 Some of the features and functionalities covered in this demo include:
- * Create a Azure App Service with Terraform
+ * Create an Azure App Service with Terraform
  * Deploy a nodejs app with Azure Cli
-
-# Sign in
-
-```
-az login
-```
-
-# Init terraform
-
-```
-terraform init
-```
-
-# Run Terraform apply
-
-```
-terraform apply
-```
 
 # Deploy
 
@@ -49,10 +31,4 @@ az webapp deployment source config --name rbbnodejshelloworld --resource-group t
 
 ```
 explorer https://rbbnodejshelloworld.azurewebsites.net
-```
-
-# Cleanup Demo
-
-```
-terraform destroy
 ```

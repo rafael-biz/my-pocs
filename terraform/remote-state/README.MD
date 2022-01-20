@@ -2,9 +2,9 @@
 
 Some of the features and functionalities covered in this demo include:
  * Overview of Terraform Local and Remote State
- * Create a Azure Storage Account
- * Create a Azure Storage Container
- * Create a Azure Resource Group using Terraform
+ * Create an Azure Storage Account
+ * Create an Azure Storage Container
+ * Create an Azure Resource Group using Terraform
  * Configure Terraform to store the state on the created container
 
 # Terraform State
@@ -12,12 +12,6 @@ Some of the features and functionalities covered in this demo include:
 Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
 
 This state is stored by default in a local file named "terraform.tfstate", but it can also be stored remotely, which works better in a team environment.
-
-# Sign in
-
-```
-az login
-```
 
 # Create Resource Group
 

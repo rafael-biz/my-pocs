@@ -1,4 +1,4 @@
-# Terraform Azure App Service Plan
+# Azure App Service Plan
 
 Some of the features and functionalities covered in this demo include:
  * Azure App Service Plan overview
@@ -11,33 +11,3 @@ In addition, Azure Functions also has the option of running in an App Service pl
 Service plan defines a set of compute resources for a web app to run. These compute resources
 are analogous to the server farm in conventional web hosting. One or more apps can be configured
 to run on the same computing resources (or in the same App Service plan).
-
-# Sign in
-
-```
-az login
-```
-
-# Init terraform
-
-```
-terraform init
-```
-
-# Run Terraform apply
-
-```
-terraform apply
-```
-
-# Inspect Plans
-
-```
-terraform state list
-```
-
-# Cleanup Demo
-
-```
-terraform destroy
-```

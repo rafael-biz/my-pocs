@@ -1,4 +1,0 @@
-.terraform
-*.hcl
-*.tfstate
-*.tfstate.backup

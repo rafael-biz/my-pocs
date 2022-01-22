@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "truffle compile",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "migrate",
+            "type": "shell",
+            "command": "truffle migrate",
+            "problemMatcher": [],
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "truffle test",
+            "problemMatcher": [],
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "npm run dev",
+            "problemMatcher": [],
+        },
+        {
+            "label": "start",
+            "type": "shell",
+            "command": "npm run start",
+            "problemMatcher": [],
+        }
+    ]
+}

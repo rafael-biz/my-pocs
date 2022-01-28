@@ -1,4 +1,4 @@
-# Function App Demo
+# Azure Functions Demo
 
 In this project you can find the following demos of Azure Functions.
 
@@ -33,4 +33,12 @@ Storage Table.
 
 ## Timer Demo
 
-This demo logs a message every 5 minutes.
+This demo shows a log message every 5 minutes.
+
+## Durable Function Orchestration Demo
+
+This demo shows durable function orchestration.
+
+# Endpoints
+
+You may find the HTTP requests on this (link)[https://www.postman.com/rbbfcd/workspace/demos].

@@ -30,6 +30,16 @@ resource "azurerm_storage_account" "demo_account" {
   account_replication_type = "LRS"
 }
 
+resource "azurerm_storage_queue" "demo" {
+  name                 = "my-queue"
+  storage_account_name = azurerm_storage_account.demo_account.name
+}
+
+resource "azurerm_storage_table" "demo" {
+  name                 = "mytable"
+  storage_account_name = azurerm_storage_account.demo_account.name
+}
+
 resource "azurerm_storage_container" "demo_container" {
   name                  = "rbbblobdemo"
   storage_account_name  = azurerm_storage_account.demo_account.name

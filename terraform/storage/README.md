@@ -2,6 +2,8 @@
 
 Some of the features and functionalities covered in this demo include:
  * Create an Azure Storage Account
+ * Create an Azure Storage Queue
+ * Create an Azure Storage Table
  * Create an Azure Storage Container
  * Create a Shared Access Signature
  * Upload file using Terraform

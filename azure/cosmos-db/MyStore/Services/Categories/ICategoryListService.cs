@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace MyStore.Services.Categories
 {
-    public interface ICategoryList
+    public interface ICategoryListService
     {
         Task<IList<CategoryDTO>> GetListAsync();
     }

@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyStore.Entities;
-using MyStore.Repositories.Categories;
 using MyStore.Services.Categories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyStore.Web.Controllers
@@ -13,22 +9,22 @@ namespace MyStore.Web.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryGet categoryGet;
+        private readonly ICategoryGetService categoryGet;
 
-        private readonly ICategoryList categoryList;
+        private readonly ICategoryListService categoryList;
 
-        private readonly ICategoryCreate categoryCreate;
+        private readonly ICategoryCreateService categoryCreate;
 
-        private readonly ICategoryUpdate categoryUpdate;
+        private readonly ICategoryUpdateService categoryUpdate;
 
-        private readonly ICategoryDelete categoryDelete;
+        private readonly ICategoryDeleteService categoryDelete;
 
         public CategoriesController(
-            ICategoryGet categoryGet,
-            ICategoryList categoryList,
-            ICategoryCreate categoryCreate,
-            ICategoryUpdate categoryUpdate,
-            ICategoryDelete categoryDelete)
+            ICategoryGetService categoryGet,
+            ICategoryListService categoryList,
+            ICategoryCreateService categoryCreate,
+            ICategoryUpdateService categoryUpdate,
+            ICategoryDeleteService categoryDelete)
         {
             this.categoryGet = categoryGet;
             this.categoryList = categoryList;

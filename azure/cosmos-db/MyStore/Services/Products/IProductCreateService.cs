@@ -2,7 +2,7 @@
 
 namespace MyStore.Services.Products
 {
-    public interface IProductCreate
+    public interface IProductCreateService
     {
         Task CreateAsync(ProductDTO dto);
     }

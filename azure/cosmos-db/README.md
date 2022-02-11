@@ -23,7 +23,7 @@ az login
 Replace location variable string below with a region that makes sense for you.
 
 ```
-az group create --name cosmosdb-demo --location brazilsouth
+az group create --name my-store-demo --location brazilsouth
 ```
 
 # Create Cosmos DB account
@@ -32,8 +32,8 @@ Create a SQL API Cosmos DB account with session consistency and multi-region wri
 
 ```
 az cosmosdb create
-    --resource-group cosmosdb-demo
-    --name rbb-cosmosdb-demo
+    --resource-group my-store-demo
+    --name rbb-my-store-demo
     --kind GlobalDocumentDB
     --locations regionName="brazilsouth" failoverPriority=0
     --locations regionName="eastus2" failoverPriority=1
@@ -41,11 +41,32 @@ az cosmosdb create
     --enable-multiple-write-locations true
 ```
 
+# Create Redis Cache
+
+```
+az redis create 
+	--location "brazilsouth"
+	--name "rbbmystore"
+	--resource-group "my-store-demo"
+	--sku "Basic"
+	--vm-size "c0"
+```
+
 # Configure
 
 Open `launchSettings.json` and update `EndpointUri` and `PrimaryKey` settings.
 
 You can find them on **Azure Portal** > **Azure Cosmos DB** > **rbb-cosmosdb-demo** > **Keys**.
+
+Open `launchSettings.json` and find `Redis:ConnectionString` entry.
+
+Replace `<host-name>` with your cache host name.
+
+You can find the host name on **Azure Portal** > **Azure Cache for Redis** > **rbbredisdemo** > **Properties**.
+
+Replace `<access-key>` with the primary key for your cache.
+
+You can find the access key on **Azure Portal** > **Azure Cache for Redis** > **rbbredisdemo** > **Access keys**.
 
 # Cleanup
 

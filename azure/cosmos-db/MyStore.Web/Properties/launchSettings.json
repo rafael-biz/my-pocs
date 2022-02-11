@@ -9,9 +9,10 @@
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "EndpointUri": "",
-        "PrimaryKey": "",
-        "DatabaseId": "MyStore"
+        "Cosmos:EndpointUri": "",
+        "Cosmos:PrimaryKey": "",
+        "Cosmos:DatabaseId": "MyStore",
+        "Redis:ConnectionString": "<host-name>,abortConnect=false,ssl=true,allowAdmin=true,password=<access-key>"
       }
     }
   }

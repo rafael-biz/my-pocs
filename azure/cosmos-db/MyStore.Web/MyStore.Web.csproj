@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyStore.Caching\MyStore.Caching.csproj" />
     <ProjectReference Include="..\MyStore.Repositories\MyStore.Repositories.csproj" />
     <ProjectReference Include="..\MyStore\MyStore.csproj" />
   </ItemGroup>

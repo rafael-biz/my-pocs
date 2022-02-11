@@ -13,25 +13,25 @@ namespace MyStore.Services
     {
         public static void AddServices(this IServiceCollection services)
         {
-            services.AddTransient<IProductGet, ProductsService>();
+            services.AddTransient<IProductGetService, ProductsService>();
 
-            services.AddTransient<IProductList, ProductsService>();
+            services.AddTransient<IProductListService, ProductsService>();
 
-            services.AddTransient<IProductCreate, ProductsService>();
+            services.AddTransient<IProductCreateService, ProductsService>();
 
-            services.AddTransient<IProductUpdate, ProductsService>();
+            services.AddTransient<IProductUpdateService, ProductsService>();
 
-            services.AddTransient<IProductDelete, ProductsService>();
+            services.AddTransient<IProductDeleteService, ProductsService>();
 
-            services.AddTransient<ICategoryGet, CategoriesService>();
+            services.AddTransient<ICategoryGetService, CategoriesService>();
 
-            services.AddTransient<ICategoryList, CategoriesService>();
+            services.AddTransient<ICategoryListService, CategoriesService>();
 
-            services.AddTransient<ICategoryCreate, CategoriesService>();
+            services.AddTransient<ICategoryCreateService, CategoriesService>();
 
-            services.AddTransient<ICategoryUpdate, CategoriesService>();
+            services.AddTransient<ICategoryUpdateService, CategoriesService>();
 
-            services.AddTransient<ICategoryDelete, CategoriesService>();
+            services.AddTransient<ICategoryDeleteService, CategoriesService>();
         }
     }
 }

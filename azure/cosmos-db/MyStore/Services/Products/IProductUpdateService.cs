@@ -2,8 +2,8 @@
 
 namespace MyStore.Services.Products
 {
-    public interface IProductGet
+    public interface IProductUpdateService
     {
-        Task<ProductDetailsDTO> GetAsync(string sky);
+        Task UpdateAsync(ProductDTO dto);
     }
 }

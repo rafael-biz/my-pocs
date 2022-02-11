@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyStore.Entities;
-using MyStore.Repositories.Products;
 using MyStore.Services.Products;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyStore.Web.Controllers
@@ -13,22 +9,22 @@ namespace MyStore.Web.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductGet productGet;
+        private readonly IProductGetService productGet;
 
-        private readonly IProductList productList;
+        private readonly IProductListService productList;
 
-        private readonly IProductCreate productCreate;
+        private readonly IProductCreateService productCreate;
 
-        private readonly IProductUpdate productUpdate;
+        private readonly IProductUpdateService productUpdate;
 
-        private readonly IProductDelete productDelete;
+        private readonly IProductDeleteService productDelete;
 
         public ProductsController(
-            IProductGet productGet,
-            IProductList productList,
-            IProductCreate productCreate,
-            IProductUpdate productUpdate,
-            IProductDelete productDelete)
+            IProductGetService productGet,
+            IProductListService productList,
+            IProductCreateService productCreate,
+            IProductUpdateService productUpdate,
+            IProductDeleteService productDelete)
         {
             this.productGet = productGet;
             this.productList = productList;

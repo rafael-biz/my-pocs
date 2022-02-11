@@ -2,7 +2,7 @@
 
 namespace MyStore.Services.Categories
 {
-    public interface ICategoryCreate
+    public interface ICategoryCreateService
     {
         Task<CategoryDTO> CreateAsync(CategoryDTO dto);
     }

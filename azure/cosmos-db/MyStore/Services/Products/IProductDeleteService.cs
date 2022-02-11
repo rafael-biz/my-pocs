@@ -2,8 +2,8 @@
 
 namespace MyStore.Services.Products
 {
-    public interface IProductUpdate
+    public interface IProductDeleteService
     {
-        Task UpdateAsync(ProductDTO dto);
+        Task DeleteAsync(string sku);
     }
 }

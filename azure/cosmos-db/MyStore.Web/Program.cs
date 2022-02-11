@@ -1,13 +1,9 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using MyStore.Caching;
 using MyStore.Repositories;
 using MyStore.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MyStore.Web
 {
@@ -23,8 +19,11 @@ namespace MyStore.Web
             return Host.CreateDefaultBuilder(args)
                 .ConfigureServices((builder, services) =>
                 {
-                    services.AddRepositories(builder.Configuration);
+                    IConfiguration configuration = builder.Configuration;
+
+                    services.AddRepositories(configuration.GetSection("Cosmos"));
                     services.AddServices();
+                    services.AddCaching(configuration.GetSection("Redis"));
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

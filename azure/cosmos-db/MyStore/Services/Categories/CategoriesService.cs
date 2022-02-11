@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyStore.Services.Categories
 {
-    public sealed class CategoriesService : ICategoryGet, ICategoryList, ICategoryCreate, ICategoryUpdate, ICategoryDelete
+    public sealed class CategoriesService : ICategoryGetService, ICategoryListService, ICategoryCreateService, ICategoryUpdateService, ICategoryDeleteService
     {
         private readonly ICategoriesRepository categories;
 

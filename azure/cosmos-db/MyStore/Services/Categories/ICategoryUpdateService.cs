@@ -2,7 +2,7 @@
 
 namespace MyStore.Services.Categories
 {
-    public interface ICategoryUpdate
+    public interface ICategoryUpdateService
     {
         Task UpdateAsync(CategoryDTO dto);
     }

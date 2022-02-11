@@ -2,8 +2,8 @@
 
 namespace MyStore.Services.Categories
 {
-    public interface ICategoryDelete
+    public interface ICategoryGetService
     {
-        Task DeleteAsync(string sku);
+        Task<CategoryDTO> GetAsync(string sku);
     }
 }

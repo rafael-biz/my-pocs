@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyStore.Services.Products
 {
-    public sealed class ProductsService : IProductGet, IProductList, IProductCreate, IProductUpdate, IProductDelete
+    public sealed class ProductsService : IProductGetService, IProductListService, IProductCreateService, IProductUpdateService, IProductDeleteService
     {
         private readonly IProductsRepository products;
 

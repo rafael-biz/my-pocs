@@ -1,0 +1,15 @@
+.themed-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.themed-button.light {
+  background: #ffffff;
+  color: #20232a;
+}
+
+.themed-button.dark {
+  background: #20232a;
+  color: #ffffff;
+}

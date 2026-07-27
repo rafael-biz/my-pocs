@@ -1,0 +1,11 @@
+.greeting {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.greeting h2 {
+  margin: 0;
+  color: #20232a;
+}

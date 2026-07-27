@@ -1,6 +1,6 @@
-# First Component
+# JSX Expressions
 
-This app explores creating and using a custom React component.
+This app explores outputting dynamic values inside JSX using curly braces.
 
 ## Getting started
 

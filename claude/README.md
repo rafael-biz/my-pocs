@@ -1,0 +1,4 @@
+# Personal Notes
+
+## Directory Structure
+
